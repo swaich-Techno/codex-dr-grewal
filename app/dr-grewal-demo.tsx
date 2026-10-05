@@ -111,9 +111,10 @@ export function DrGrewalDemo() {
 
     <main id="main">
       {view === "home" && <>
-        <section className="hero">
-          <div className="hero-copy"><p className="kicker">Grewal Homeo Remedies · Mohali</p><h1>{t.hero}</h1><p>{t.deck}</p><div className="action-row"><button className="primary" onClick={() => navigate("catalogue")}>{t.explore} <span>→</span></button><button className="secondary" onClick={() => navigate("support")}><Icon name="people" /> {t.talk}</button></div></div>
-          <div className="hero-image"><Image src="/images/dr-grewal/cattle-hero.jpg" alt="Cattle grazing in a green field" fill priority sizes="(max-width: 760px) 100vw, 60vw" /></div>
+        <section className="hero hero-artwork" aria-labelledby="homepage-hero-title">
+          <h1 className="sr-only" id="homepage-hero-title">{t.hero}</h1>
+          <div className="hero-artwork-image"><Image src="/images/dr-grewal/homepage-hero.png" alt="Veterinary Care, Trusted Since 1973. Dr. Grewal, Mohali, pictured with cattle and a golden retriever in a field." fill priority sizes="100vw" /></div>
+          <div className="hero-action-band"><p>{t.deck}</p><div className="action-row"><button className="primary" onClick={() => navigate("catalogue")}>{t.explore} <span>→</span></button><button className="secondary" onClick={() => navigate("support")}><Icon name="people" /> {t.talk}</button></div></div>
         </section>
         <section className="home-grid">
           <div className="animal-section"><div className="section-title"><h2>{t.shop}</h2><button onClick={() => navigate("catalogue")}>{t.all} →</button></div><div className="animal-grid">
