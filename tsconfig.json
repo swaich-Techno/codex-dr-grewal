@@ -30,5 +30,14 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "b-socio-final",
+    "b-socio-public",
+    "github-rehmat-panjab",
+    "rehmat-motion-concepts",
+    "rehmat-panjab-preview-release",
+    "studio-b-socio",
+    "Rehmat Panjab Brand Film"
+  ]
 }
