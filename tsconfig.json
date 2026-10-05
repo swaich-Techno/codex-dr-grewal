@@ -38,6 +38,7 @@
     "rehmat-motion-concepts",
     "rehmat-panjab-preview-release",
     "studio-b-socio",
-    "Rehmat Panjab Brand Film"
+    "Rehmat Panjab Brand Film",
+    "vite.config.ts"
   ]
 }
